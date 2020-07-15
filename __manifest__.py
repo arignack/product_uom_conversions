@@ -3,24 +3,31 @@
     'name': "product_uom_conversions",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Easily create new units of measure according to common products unit of measures.
+        """,
 
     'description': """
-        Long description of module's purpose
+        For some products, like beauty products, its easier for customers to remember units like:
+        - Bottle of 450ml
+        - Recipient of 250 fl oz
+        When decreasing those products from inventory, sometimes you use other unit of measure.
+        Example:
+        - Enters to the Salon 3 Bootle of 450ml of Keratina
+        - During the service, is used 3 fl oz of Keratina
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Alian Rigñack",
+    'website': "https://alianrignack.blog",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Products',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base',
+                'product'],
 
     # always loaded
     'data': [
